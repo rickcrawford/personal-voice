@@ -52,6 +52,22 @@ Every pass ends with an **ai-smell score** from 0 to 100 (lower is more human), 
 
 You can also layer house style on top: ban specific words, forbid em dashes, cap the length, or require plain prose with no headers. State the constraint and the skill applies it throughout.
 
+## The research behind it
+
+The skill is a field guide plus a lightweight judge, and both halves are grounded in published work.
+
+The pattern catalog started from [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup from thousands of flagged edits. That page's core insight drives everything here: a language model picks the most statistically likely next token, so its output converges on generic phrasing that fits the widest range of cases. Research on the [shrinking landscape of linguistic diversity](https://arxiv.org/abs/2502.11266) measures that convergence directly and finds LLM writing assistants reduce stylistic variety. AI-smell is the surface of it, which is why the fix is always more specificity, more variation, and a point of view.
+
+The word-level tells are not folklore either. [Kobak et al. (2024)](https://arxiv.org/abs/2406.07016) tracked "excess vocabulary" across 14 million PubMed abstracts and found words like *delve*, *underscore*, and *showcase* spiked after ChatGPT, a larger shift than the Covid pandemic left on scientific writing.
+
+The **ai-smell score** borrows from the LLM-as-a-judge literature:
+
+- **Reason first, then score.** [G-Eval](https://arxiv.org/abs/2303.16634) showed an LLM judge matches human ratings far better when it reasons through the specifics and scores each dimension separately, instead of guessing one overall number. The score is built that way.
+- **Score as a skeptic.** LLM judges suffer from [self-preference bias](https://arxiv.org/abs/2410.21819) (they rate text in their own style too kindly) and [verbosity bias](https://arxiv.org/abs/2406.07791) (they reward length). The scoring rules push against both, because the judge and the writer here are the same kind of model.
+- **The score is not a detector.** Statistical signals like perplexity and burstiness [misfire on plain and non-native writing](https://www.pangram.com/blog/why-perplexity-and-burstiness-fail-to-detect-ai), so the number stays a self-check on how the text reads, never a claim about who or what wrote it.
+
+The fuller writeup, with every source, is in `references/ai-tells.md`.
+
 ## Credit
 
 The pattern catalog builds on the humanizer approach and on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup. It also borrows from [no-ai-slop](https://github.com/petergyang/no-ai-slop) (the detect-vs-edit split, the minimum-effective-edit principle, and tells like colon reveals and empty intensifiers) and [deslop](https://blog.stephenturner.us/p/deslop) (dramatic-pause directives and calibrating how hard to edit to how voice-critical the piece is). Additional patterns come from observing common tells in long-form drafting.
