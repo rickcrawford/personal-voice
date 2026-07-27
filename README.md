@@ -9,7 +9,7 @@ It does two things:
 
 ## What's in here
 
-- `SKILL.md`: the skill itself. Personal voice, voice matching, the six highest-signal AI tells, no em/en dash default, writing and editing workflow, and the final read-aloud audit.
+- `SKILL.md`: the skill itself. Personal voice, voice matching, two modes (detect the tells or edit them out), the six highest-signal AI tells, no em/en dash default, writing and editing workflow, the ai-smell score (a 0 to 100 rating of how machine-generated the text reads), and the final read-aloud audit.
 - `references/ai-tells.md`: the full catalog of AI writing patterns, each with a before-and-after example. The skill loads this when it's doing real drafting or auditing.
 
 ## Install from `.skill` package
@@ -48,11 +48,13 @@ Point your assistant at the skill and ask it to write or clean something:
 
 If you give it a writing sample, it will match your sentence rhythm, word choice, and habits rather than just removing tells. If you don't, it falls back to a natural, varied, opinionated default voice. By default it also strips em dashes and en dashes from output.
 
+Every pass ends with an **ai-smell score** from 0 to 100 (lower is more human), broken down across structural tics, rhythm, voice, lexical tells, and formatting, with the specific lines that earned each point. On an edit it reports the before-and-after so you can see the drop. The score is a self-check on how the writing reads, not an AI detector.
+
 You can also layer house style on top: ban specific words, forbid em dashes, cap the length, or require plain prose with no headers. State the constraint and the skill applies it throughout.
 
 ## Credit
 
-The pattern catalog builds on the [humanizer](https://github.com/) approach and on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup. Additional patterns come from observing common tells in long-form drafting.
+The pattern catalog builds on the humanizer approach and on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup. It also borrows from [no-ai-slop](https://github.com/petergyang/no-ai-slop) (the detect-vs-edit split, the minimum-effective-edit principle, and tells like colon reveals and empty intensifiers) and [deslop](https://blog.stephenturner.us/p/deslop) (dramatic-pause directives and calibrating how hard to edit to how voice-critical the piece is). Additional patterns come from observing common tells in long-form drafting.
 
 ## License
 

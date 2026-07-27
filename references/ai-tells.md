@@ -58,6 +58,12 @@ Scan next: significance inflation, superficial `-ing` endings, fragmented header
 39. Escalating adjective chains
 40. Explicit takeaway boxes
 41. Rhetorical question transitions
+42. The "it was never X, it is Y" false-depth reveal
+43. The one-move-solves-all convergence
+44. The circular bookend
+45. Colon reveals
+46. Faux-insight and throat-clearing openers
+47. Empty intensifiers and hollow adverbs
 
 ---
 
@@ -69,7 +75,7 @@ Scan next: significance inflation, superficial `-ing` endings, fragmented header
 
 **Why it reads as AI.** The pattern adds emphasis through opposition rather than substance. Once it lands. Three times in a piece it is a rhetorical tic. The contrast is doing the work of conviction.
 
-**Variants.** "It's not just X, it's Y." "Not X. Y." "It's not about X. It's about Y." "Rather than X, Y" when X and Y aren't actually being weighed. Tailing negations: "The form fills itself in, no guessing."
+**Variants.** "It's not just X, it's Y." "Not X. Y." "It's not about X. It's about Y." "Rather than X, Y" when X and Y aren't actually being weighed. Tailing negations: "The form fills itself in, no guessing." See also the "it was never X, it is Y" false-depth reveal (entry 42).
 
 **Fix.** Say what the thing is. Trust the reader to register the contrast. If the contrast is essential, give the opposing case its own sentence and develop it.
 
@@ -91,7 +97,7 @@ Scan next: significance inflation, superficial `-ing` endings, fragmented header
 
 **Why it reads as AI.** It mimics a mic drop without a speaker behind it. The two-clause rhythm is identical every time. The minimizer ("execution," "detail," "plumbing," "sequencing") implies the writer has zoomed out to a level the reader hasn't earned. The line usually substitutes for finishing the argument.
 
-**Variants.** "That's the thesis. Everything downstream follows." "That's the answer. The rest is just plumbing." "That's it" as a standalone wrap-up. A softer version is a punchy closer that claims a result without support.
+**Variants.** "That's the thesis. Everything downstream follows." "That's the answer. The rest is just plumbing." "That's it" as a standalone wrap-up. A softer version is a punchy closer that claims a result without support. Related: the dramatic-pause directive that orders the reader to be impressed, "Let that sink in," "Read that again," "Pause on that for a second." Cut these; if the point is worth pausing on, the sentence itself should make the reader stop.
 
 **Fix.** Cut the line; the paragraph above usually made the point. Or replace it with a real transition. Or make the gesture specific: if there is an actual sequence or set of steps, name it.
 
@@ -416,9 +422,87 @@ Keep hyphens only inside genuinely hyphenated words. The personal-voice skill ap
 
 ---
 
+## 42. The "it was never X, it is Y" false-depth reveal
+
+**Looks like.** A sentence that denies the obvious cause and swaps in a deeper-sounding replacement, often an abstraction. "The cost was never any single tool, it is the space between them." "The problem was never the code, it was the culture." "It was never about speed, it is about trust." The replacement is frequently vague: the space between, the gap, the seams, the friction, the culture.
+
+**Why it reads as AI.** It performs insight by negation. It props up an obvious answer as a strawman, negates it, and reveals a profound-sounding substitute that usually cannot be measured. It fuses the X-not-Y contrast (entry 1) with the deeper-truth authority trope (entry 18), and the comma-splice rhythm ("never X, it is Y") repeats.
+
+**Fix.** Name the real cause plainly and concretely, and drop the "was never" setup and the abstraction. "The cost was never any single tool, it is the space between them" becomes "The handoffs between the tools cost more than the licenses do." If the contrast earns its place, develop the obvious cause as a real point rather than a strawman.
+
+---
+
+## 43. The one-move-solves-all convergence
+
+**Looks like.** A count of problems, forces, or reasons, followed by a claim that one thing answers all of them, with the numbers lining up too neatly. "Three pressures arrived together, and consolidation is the one move that answers all three." "Teams face four challenges, and this solves every one." "There are five reasons, and they all point to one answer."
+
+**Why it reads as AI.** It manufactures false tidiness. Real situations rarely resolve this cleanly. The "one move that answers all N" claim inflates the solution and flattens the problems into a matched set, and the symmetry (N problems, one answer, "all N") sounds conclusive without earning it. It often rides on top of rule of three (entry 13) and significance inflation (entry 4).
+
+**Fix.** Drop the "one move that answers all" tally. Say what the thing actually does for each item, or make the plain claim without the scoreboard. "Three pressures arrived together this year, and each one strengthens the case for consolidating your tools." Let the reader see the fit instead of asserting a perfect one.
+
+---
+
+## 44. The circular bookend
+
+**Looks like.** A sentence or passage that closes by restating its opening in new words, so it loops back on itself. "The handoffs cost more than the licenses. ... and the handoffs become the bottleneck." "Trust is everything here. ... which is why trust matters most." The closing clause re-asserts the premise and adds no new information.
+
+**Why it reads as AI.** The model rounds a passage off by echoing where it started, which feels complete but moves nothing forward. Human writing usually ends on the next step, a consequence, or a sharper detail, not a paraphrase of the opening. It often pairs with the rhetorical wrap-up (entry 3), and when the restatement is also the third parallel item, with rule of three (entry 13).
+
+**Fix.** End on new information: a consequence, a concrete detail, or the next move. If a callback is intentional, make the closing line do more than repeat the opening.
+
+---
+
+## 45. Colon reveals
+
+**Looks like.** A noun or short phrase, a colon, then a dramatic lowercase payoff. "The best part: it learns as you go." "The result: a system nobody understands." "One problem: it doesn't scale." The colon stages a reveal the sentence hasn't earned.
+
+**Why it reads as AI.** It manufactures suspense with punctuation. The colon promises that something surprising follows, so the model reaches for it to make an ordinary statement feel like a payoff. Stacked two or three times in a piece, the tic is obvious. It is the punctuation cousin of the rhetorical wrap-up (entry 3).
+
+**Fix.** Write the sentence straight. "The best part: it learns as you go" becomes "It learns as you go, which is the part I like." Keep a colon only where it does real grammatical work, introducing a genuine list or a quotation.
+
+---
+
+## 46. Faux-insight and throat-clearing openers
+
+**Looks like.** A sentence that promises a hidden truth or clears its throat before saying anything. "Here's the thing." "Here's what nobody tells you." "What most people get wrong is." "The truth is." "Let me be clear." "The reality is." The setup implies the writer is about to reveal something contrarian; the payoff is usually ordinary.
+
+**Why it reads as AI.** It performs insider knowledge to buy authority the content hasn't earned, and it delays the actual point by a full clause. It overlaps with persuasive authority tropes (entry 18, "the real question is," "at its core") and signposting (entry 32), but the giveaway here is the promise of a secret. Real writers with a genuinely contrarian point usually just state it.
+
+**Fix.** Delete the opener and start with the claim. "Here's what nobody tells you: caching is hard to get right" becomes "Caching is hard to get right, and most guides skip why." If the point really is counterintuitive, show why instead of announcing that it is.
+
+---
+
+## 47. Empty intensifiers and hollow adverbs
+
+**Looks like.** Adverbs and intensifiers sprinkled in to add heat without adding meaning: just, really, very, actually, literally, simply, honestly, truly, basically, fundamentally, importantly, crucially, notably, remarkably. "This is just really important." "It's actually quite simple." "Honestly, this basically changes everything."
+
+**Why it reads as AI.** The words perform emphasis or candor while carrying no information. "Honestly" and "actually" imply a contrast with some unstated dishonest or expected version that never appears. "Simply" and "just" wave away difficulty the reader may not share. Delete any of them and the sentence usually means exactly the same thing, which is the test.
+
+**Fix.** Cut the word and check the sentence still stands. It almost always does. Keep an intensifier only when it marks a real contrast the sentence needs ("the build is slow, but the tests are *very* slow" earns it). One survivor per paragraph at most.
+
+---
+
 ## The final audit question
 
 After any draft, ask honestly: "What would make this so obviously AI-generated?" Name the remaining tells using the vocabulary above. Then revise. If you cannot read a paragraph aloud without hearing the cadence of a model, it still reads as AI.
+
+This is also where the ai-smell score gets assigned (see the rubric in `SKILL.md`): the tells named here are the evidence behind the score. Structural tells (the top six plus entries 42 to 46) carry the most weight, rhythm and voice next, lexical and formatting tells least. Cite the specific instances, then score and revise.
+
+---
+
+## How the ai-smell score relates to the research
+
+The rubric is a lightweight, prose-specific version of the LLM-as-a-judge methods now standard in NLG evaluation. A few findings shaped how it is scored.
+
+**Reason before you rate, and score per dimension.** G-Eval (Liu et al. 2023) established that an LLM judge aligns with human ratings far better when it generates explicit evaluation steps first and fills in a per-criterion form, rather than emitting one holistic number. That is exactly the order the final pass uses: name the tells, then score each of the five dimensions. Rubric-based analytic scoring beats a single overall grade.
+
+**Guard against judge bias.** Studies of LLM judges document three biases that would wreck an ai-smell score: self-preference or self-enhancement bias (Wataoka et al. 2024), where a model rates text in its own style more favorably; verbosity bias, where longer answers score higher; and position bias (Shi et al. 2024). Self-preference is the dangerous one here, because the judge and the writer are the same kind of model, so the judge is partly blind to its own tics. The scoring rules counter it directly: score as a hostile skeptic, and never reward length or fluency.
+
+**The lexical dimension has an empirical backbone.** Kobak et al. (2024) measured "excess vocabulary" across 14 million PubMed abstracts and showed that words like *delve*, *underscore*, and *showcase* spiked after ChatGPT, an effect larger than the Covid pandemic left on scientific prose. Word-frequency tells are not folklore; they are measurable.
+
+**Rhythm is real but never decisive.** Burstiness (variation in sentence-level surprise) underlies the classic detectors DetectGPT, Fast-DetectGPT, and Binoculars (Hans et al. 2024). But Pangram Labs and others show low burstiness alone misfires badly: it flags plain human prose, famous documents, and non-native English writers. So uniform rhythm is one dimension of five, never a verdict on its own. This is why the score stays inside the pass and is never presented as proof of authorship.
+
+**The deeper mechanism is homogenization.** Work on shrinking linguistic diversity (arxiv 2502.11266) and on instruction-tuning reducing lexical variety shows LLMs converge toward a low-diversity mean. AI-smell is the surface of that convergence, which is why the fix is always the same: reintroduce specificity, variation, and a point of view.
 
 ---
 
@@ -441,3 +525,12 @@ These are descriptive field guides, not detectors. No single pattern proves AI a
 | Sarvazyan et al. 2025 (ACL) | https://aclanthology.org/2025.genaidetect-1.6/ | LLMs leave persistent lexical/syntactic fingerprints; structural tells outlast individual words |
 | OpenAI community thread | https://community.openai.com/t/what-are-your-strategies-for-spotting-ai-writing/1150515 | Practitioner discussion; emphasizes structural joints over word lists |
 | Embryo cross-model word list | https://embryo.com/blog/list-words-ai-overuses/ | Aggregated overuse list across ChatGPT, Claude, Gemini, etc. |
+| no-ai-slop (Peter Yang) | https://github.com/petergyang/no-ai-slop | Detect-vs-edit split, minimum-effective-edit principle, colon reveals, throat-clearing openers, banned intensifier list |
+| deslop (Stephen Turner) | https://blog.stephenturner.us/p/deslop | Dramatic-pause directives ("let that sink in"), scoring rubric, calibrating edit aggressiveness to how voice-critical the piece is |
+| G-Eval: NLG evaluation with GPT-4 (Liu et al. 2023) | https://arxiv.org/abs/2303.16634 | Rubric-based LLM-as-a-judge: reason via chain-of-thought first, then form-fill per-dimension scores. Basis for the score's reason-then-rate order |
+| Self-Preference Bias in LLM-as-a-Judge (Wataoka et al. 2024) | https://arxiv.org/abs/2410.21819 | Judges favor text in their own style; grounds the "score as a skeptic" rule |
+| Position bias in LLM-as-a-Judge (Shi et al. 2024) | https://arxiv.org/abs/2406.07791 | Systematic study of position and verbosity bias in LLM judges |
+| Excess vocabulary in academic writing (Kobak et al. 2024) | https://arxiv.org/abs/2406.07016 | Data-driven measurement of LLM word overuse (*delve, underscore*) across 14M abstracts; empirical basis for the lexical dimension |
+| Binoculars: zero-shot LLM detection (Hans et al. 2024) | https://arxiv.org/abs/2401.12070 | Perplexity/cross-perplexity detection; the burstiness signal behind the rhythm dimension |
+| Why perplexity and burstiness fail (Pangram Labs) | https://www.pangram.com/blog/why-perplexity-and-burstiness-fail-to-detect-ai | Limits of statistical signals: false positives on plain and non-native prose; why rhythm is never decisive alone |
+| Shrinking Landscape of Linguistic Diversity (2025) | https://arxiv.org/abs/2502.11266 | LLM adoption reduces stylistic diversity; the homogenization the whole skill works against |
