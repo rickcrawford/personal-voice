@@ -9,11 +9,13 @@ The first six are the ones that show up most. Hunt them first.
 1. **The X-not-Y construction**: contrast through negation
 2. **The contrast-flip couplet**: two short sentences, second inverts the first
 3. **The rhetorical wrap-up**: fake mic-drop closer
-4. **Travel metaphors for non-travel concepts**: journey, arc, path stacks
+4. **Dead metaphor stacks**: travel (journey, arc, path), structural (load-bearing, foundation, thread, levers), doors (opens the door, unlocks, paves the way)
 5. **Signposting and announcements**: "Let's dive in," "Here's what you need to know"
 6. **Rule of three**: forced triplets
 
-Scan next: significance inflation, superficial `-ing` endings, fragmented headers, AI vocabulary clusters, em and en dashes.
+Scan next: significance inflation, superficial `-ing` endings, fragmented headers, structural and door metaphors (load-bearing, threads, opens the door), imperative closers, AI vocabulary clusters.
+
+Then grep for provenance artifacts (entry 57). Those are evidence about how the text was made rather than how it reads, and one hit outweighs every stylistic judgment on this list.
 
 ## Contents
 
@@ -63,7 +65,17 @@ Scan next: significance inflation, superficial `-ing` endings, fragmented header
 44. The circular bookend
 45. Colon reveals
 46. Faux-insight and throat-clearing openers
-47. Empty intensifiers and hollow adverbs
+47. Empty intensifiers and adverb tics
+48. Load-bearing and structural metaphors
+49. Door and unlock metaphors
+50. Imperative closers
+51. Consultant-deck vocabulary
+52. Snowclones and named-law drops
+53. The shift framing
+54. Punctuation sparseness and long unbroken sentences
+55. Over-explained theme and tidy resolution
+56. Document-structure artifacts
+57. Provenance artifacts and citation pathologies
 
 ---
 
@@ -153,7 +165,9 @@ Scan next: significance inflation, superficial `-ing` endings, fragmented header
 
 **Watch-words.** delve, navigate, intricate, tapestry, landscape (abstract), testament, pivotal, vibrant, garner, foster, underscore, showcase, robust, seamless, holistic, leverage, unleash, harness, elevate, journey (metaphorical), arc (metaphorical), realm, embark, dive into, additionally, crucial, key (adjective), interplay, valuable.
 
-**Why it reads as AI.** Frequency. Each word in isolation is fine. A cluster of them in one piece is the giveaway. They co-occur.
+**The 2026 set.** The list above is the ChatGPT-era vocabulary that detectors and word-frequency studies caught first, so a lot of writing has already been scrubbed of it. A newer cluster has replaced it, drawn from Forbes's May 2026 roundup of AI giveaways: shift, matters ("this matters because"), shape (verb, "shapes how we think"), land ("the point lands"), real ("real value," "real impact"), earn ("earn the right to," "earn trust"), the work ("do the work"), hold ("hold space," "hold the line"), pull ("the pull of"), compound ("decisions compound"), signal (abstract noun), built different, quietly (entry 47). These are harder to see because they are plain English words, and that is the point: the tell is the density and the abstraction, not the rarity.
+
+**Why it reads as AI.** Frequency. Each word in isolation is fine. A cluster of them in one piece is the giveaway. They co-occur. The vocabulary also rotates as models change and as writers learn to avoid the flagged words, so treat any watch-list as dated and check the current one.
 
 **Fix.** Use the plain word. Delve becomes look at. Navigate becomes work through. Intricate becomes detailed. Underscore becomes show. Robust becomes reliable or thorough. Leverage becomes use.
 
@@ -205,9 +219,9 @@ Scan next: significance inflation, superficial `-ing` endings, fragmented header
 
 **Looks like.** journey, arc, path, voyage, road, trail, embark, navigate used for abstract processes that don't move. "The product has a journey." "That arc holds." "The path forward." "The customer journey." "Navigating the complexities of."
 
-**Why it reads as AI.** Decorative when not doing work. They make an ordinary process or sequence sound momentous. They compound: once a piece commits to one travel word, the related words pile up.
+**Why it reads as AI.** Decorative when not doing work. They make an ordinary process or sequence sound momentous. They compound: once a piece commits to one travel word, the related words pile up. Structural metaphors (entry 48) and door metaphors (entry 49) are the same tell in a different register, and the three clusters often appear in the same paragraph.
 
-**Controlled exception.** A single anchoring travel metaphor can earn its place if it organizes a piece's structure (a title, a heading, a thesis sentence). Use it once or twice in those load-bearing spots and don't let related travel words proliferate around it.
+**Controlled exception.** A single anchoring travel metaphor can earn its place if it organizes a piece's structure (a title, a heading, a thesis sentence). Use it once or twice in those spots and don't let related travel words proliferate around it.
 
 **Fix.** Use the literal word. Journey, arc, or path becomes process, sequence, stages, or pattern. "Across that arc" becomes "at every stage." If the sentence reads fine after the swap, the metaphor wasn't doing work.
 
@@ -263,7 +277,9 @@ Scan next: significance inflation, superficial `-ing` endings, fragmented header
 
 **Looks like.** Em dashes in place of commas, periods, or parentheses, used as a default punchy connector. En dashes for ranges (*1990–2000*, *pages 12–15*) or as a weaker stand-in for an em dash.
 
-**Why it reads as AI.** Em dashes appear at much higher frequency in AI text than in human writing. Models also misuse hyphens and en dashes inconsistently. The dash stack reads like punchy sales copy.
+**Why it reads as AI.** The dash stack reads like punchy sales copy, and models misuse hyphens and en dashes inconsistently.
+
+**Caveat, and it is a real one.** The em dash is no longer good evidence of AI authorship. The Economist's 2026 comparison of its own prose against ChatGPT, Claude, Gemini, and Grok (55,940 sentences, 1.2 million words) found that only Claude used em dashes more often than human writers did; the others used them less. Meanwhile the same study found models use *fewer* commas, semicolons, and parentheses overall (entry 54). So treat a pile of em dashes as a style problem rather than a fingerprint, and do not raise a score on dash count alone. This skill still strips them by default, but that is a house-style choice about how the writing should read, not a detection claim.
 
 **Fix.** Replace every em and en dash:
 
@@ -414,17 +430,17 @@ Keep hyphens only inside genuinely hyphenated words. The personal-voice skill ap
 
 ## 41. Rhetorical question transitions
 
-**Looks like.** "So what does this mean?" "But is that enough?" "How do we solve this?" between sections, with the answer immediately following in the next paragraph.
+**Looks like.** "So what does this mean?" "But is that enough?" "How do we solve this?" between sections, with the answer immediately following in the next paragraph. Also headings phrased as questions when the section just answers them: "## Why does this matter?" "## What changed?" "## So where does that leave us?"
 
-**Why it reads as AI.** Fake momentum. The question performs curiosity without risk; the answer was always coming. Pangram and academic-integrity guides both flag this as a common transition tic.
+**Why it reads as AI.** Fake momentum. The question performs curiosity without risk; the answer was always coming. The heading version is the same tic at document scale, and it turns a table of contents into a FAQ the reader never asked for. Pangram and academic-integrity guides both flag this as a common transition tic.
 
-**Fix.** Drop the question and state the point. "That leaves one problem" works if you need a bridge; a question usually does not.
+**Fix.** Drop the question and state the point. "That leaves one problem" works if you need a bridge; a question usually does not. For headings, use the answer as the heading: "## Why does this matter?" becomes "## It changes who signs off on releases." Keep a question heading only when the piece genuinely does not answer it.
 
 ---
 
 ## 42. The "it was never X, it is Y" false-depth reveal
 
-**Looks like.** A sentence that denies the obvious cause and swaps in a deeper-sounding replacement, often an abstraction. "The cost was never any single tool, it is the space between them." "The problem was never the code, it was the culture." "It was never about speed, it is about trust." The replacement is frequently vague: the space between, the gap, the seams, the friction, the culture.
+**Looks like.** A sentence that denies the obvious cause and swaps in a deeper-sounding replacement, often an abstraction. "The cost was never any single tool, it is the space between them." "The problem was never the code, it was the culture." "It was never about speed, it is about trust." The replacement is frequently vague: the space between, the gap, the seams, the friction, the culture. Those connective-tissue abstractions are catalogued in entry 48.
 
 **Why it reads as AI.** It performs insight by negation. It props up an obvious answer as a strawman, negates it, and reveals a profound-sounding substitute that usually cannot be measured. It fuses the X-not-Y contrast (entry 1) with the deeper-truth authority trope (entry 18), and the comma-splice rhythm ("never X, it is Y") repeats.
 
@@ -472,13 +488,153 @@ Keep hyphens only inside genuinely hyphenated words. The personal-voice skill ap
 
 ---
 
-## 47. Empty intensifiers and hollow adverbs
+## 47. Empty intensifiers and adverb tics
 
-**Looks like.** Adverbs and intensifiers sprinkled in to add heat without adding meaning: just, really, very, actually, literally, simply, honestly, truly, basically, fundamentally, importantly, crucially, notably, remarkably. "This is just really important." "It's actually quite simple." "Honestly, this basically changes everything."
+**Looks like.** Adverbs and intensifiers sprinkled in to add heat without adding meaning: just, really, very, actually, literally, simply, honestly, truly, basically, fundamentally, importantly, crucially, notably, remarkably, genuinely, arguably, meaningfully, quietly. "This is just really important." "It's actually quite simple." "Honestly, this basically changes everything." "A genuinely useful shift." "Quietly building the best product in the category."
 
-**Why it reads as AI.** The words perform emphasis or candor while carrying no information. "Honestly" and "actually" imply a contrast with some unstated dishonest or expected version that never appears. "Simply" and "just" wave away difficulty the reader may not share. Delete any of them and the sentence usually means exactly the same thing, which is the test.
+**Why it reads as AI.** The words perform emphasis or candor while carrying no information. "Honestly" and "actually" imply a contrast with some unstated dishonest or expected version that never appears. "Simply" and "just" wave away difficulty the reader may not share. "Genuinely" and "meaningfully" try to certify that this instance is the real one, which only raises the question of the others. "Arguably" hedges and boosts at the same time, so the sentence commits to nothing. "Quietly" is the current standout: it manufactures drama by implying the writer noticed something others missed ("quietly became the default," "quietly shipping"), and it topped Forbes's May 2026 list of new AI giveaways. Delete any of them and the sentence usually means exactly the same thing, which is the test.
 
 **Fix.** Cut the word and check the sentence still stands. It almost always does. Keep an intensifier only when it marks a real contrast the sentence needs ("the build is slow, but the tests are *very* slow" earns it). One survivor per paragraph at most.
+
+---
+
+## 48. Load-bearing and structural metaphors
+
+**Looks like.** Structural engineering applied to arguments, teams, and decisions that are not buildings.
+
+*Load and structure.* "That assumption is load-bearing." "That word is doing a lot of work." "The heavy lifting happens in the second step." "Scaffolding for the team." "The foundation everything rests on." "The cornerstone." "Bedrock." "The pillars of the program." "Building blocks." "The whole thing collapses without it."
+
+*Connective tissue.* "The thread between the two teams." "The thread running through all of this." "The connective tissue between the systems." "The spine of the argument." "The backbone of the platform." "The seams where they meet." "The fabric of the organization." "The glue holding it together."
+
+*Mechanical cousins.* "The levers you can pull." "The dials worth turning." "That moves the needle." "The plumbing underneath." "Putting it on rails." "Under the hood." "The surface area of the problem." Same move, different workshop.
+
+**Why it reads as AI.** The metaphor claims something matters structurally without naming what depends on it. "Load-bearing" asserts that removing the thing breaks something, and then never says what breaks. "Doing a lot of work" asserts hidden importance and skips the demonstration. The connective-tissue words are the worst of the set, because they name a relationship the sentence never specifies, which is the same move as the false-depth reveal (entry 42, "the space between them"). They also cluster: once a paragraph has a foundation it tends to grow a spine, then some scaffolding. Travel metaphors (entry 16) behave the same way and often show up in the same paragraph.
+
+**Fix.** Say what depends on what, and what breaks if it goes.
+
+- "That assumption is load-bearing" becomes "If that assumption is wrong, the pricing model and the hiring plan both have to change."
+- "The word 'reliable' is doing a lot of work here" becomes "Nobody has defined 'reliable,' and the SLA and the marketing page use it differently."
+- "The thread between the two teams" becomes "Both teams depend on the same schema, and neither owns it."
+- "The levers we can pull" becomes "We can change price, headcount, or scope."
+
+Swap the literal statement in. If the sentence reads fine, the metaphor was decoration.
+
+---
+
+## 49. Door and unlock metaphors
+
+**Looks like.** "That opens the door to X." "This closes the door on the old approach." "Which doors this opens and which it closes." "That unlocks a new way of working." "It paves the way for Y." "A gateway to Z." "An on-ramp for new users." "That opens the floodgates." "Once you cross that threshold."
+
+**Why it reads as AI.** It is a hedge dressed as a claim. "Opens the door to faster releases" means the writer would not commit to saying releases get faster. The reader gets the feeling of a consequence with none of the specifics, and no way to check it later. The open/close pairing ("which doors this opens and which it closes") is especially machine-flavored, because the symmetry is doing the thinking: it promises a balanced analysis and delivers two abstractions. It also compounds with the structural cluster (entry 48), since doors live in the same building.
+
+**Fix.** State the consequence and who gets it, or admit the uncertainty in plain words.
+
+- "That opens the door to faster releases" becomes "Once that lands, releases go out weekly instead of monthly."
+- "This unlocks better reporting" becomes "Finance can pull the numbers themselves instead of filing a ticket."
+- If you genuinely don't know whether the thing follows, say that: "This might get us to weekly releases, but only if the test suite gets faster too."
+
+---
+
+## 50. Imperative closers
+
+**Looks like.** A short command at the end that tells the reader what to do next. "Start there." "Pick one and run it this quarter." "Do that first." "Try it on your next project." "Start small. Ship it. Iterate." "The next time this comes up, ask that question."
+
+**Why it reads as AI.** Every model-written LinkedIn post and newsletter ends this way. The imperative simulates the shape of useful advice while adding no new information, and it presumes an authority over the reader that the piece did not establish. It is usually a substitute for a real ending, in the same family as the rhetorical wrap-up (entry 3) and the generic positive conclusion (entry 21). The tell is strongest when the command is vague ("start there"), and when it stacks into a triplet ("start small, ship it, iterate"), which adds rule of three (entry 13) on top.
+
+**Fix.** End on the last real thing you have to say. If there genuinely is an action, make it specific and say who does it and when, or write it in first person about what you are going to do. "Start there" becomes "I'm running this on the billing service first, because it has the worst test coverage." Cutting the closer entirely is usually the better edit; the previous paragraph almost always ends the piece better than the command does.
+
+---
+
+## 51. Consultant-deck vocabulary
+
+**Looks like.** Table stakes, moat, flywheel, north star, single pane of glass, step change, force multiplier, center of gravity, land and expand, blast radius, order of magnitude, first-class citizen, unlock (see entry 49), operationalize, socialize (as in "socialize the plan"), right-size, level set.
+
+**Why it reads as AI.** The words come from strategy decks, where their job is to sound decisive in a room where nobody will ask a follow-up question. Models reach for them because business writing in the training data is saturated with them, and because each one substitutes a category for a fact. "Table stakes" replaces the list of features you actually need. "Step change" replaces the number. Three or more in a piece reads as a deck someone converted to prose.
+
+**Controlled exception.** Some of these are real terms of art with precise meanings in a specific field, and you should not give up a word your audience uses correctly. "Blast radius" in an incident review, "moat" in an investor memo, "north star metric" on a team that has literally defined one. The test is whether a reader in that room could tell you what it refers to. If they could, keep it and use it once. If it is decorating a general-audience piece, cut it.
+
+**Fix.** Replace the category with the fact. "SSO is table stakes now" becomes "Every deal over 200 seats has asked for SSO." "That would be a step change in performance" becomes "That takes the p99 from 400ms to 90ms."
+
+---
+
+## 52. Snowclones and named-law drops
+
+**Looks like.**
+
+*Snowclones.* "X is the new Y." "It's a feature, not a bug." "X all the way down." "Nobody ever got fired for buying X." "The best X is the one you'll actually use." "X is eating the world." "There's no such thing as a free X." "Considered harmful."
+
+*Named-law drops.* Goodhart's law, Chesterton's fence, Conway's law, Jevons paradox, Amdahl's law, Campbell's law, Hyrum's law, Brandolini's law, the Peter principle, Occam's razor, Hanlon's razor, the Dunning-Kruger effect, Parkinson's law.
+
+**Why it reads as AI.** Both moves borrow authority from a shape the reader already recognizes. The snowclone supplies a familiar rhythm so an ordinary claim arrives feeling proven. The named law supplies a citation-shaped object that is doing no work: the piece names the law, gestures at the resemblance, and moves on without showing that the mechanism actually applies. Models love them because the surrounding text is highly predictable once the name appears. Sprinkling three through a piece is decoration, and the giveaway is that you could delete every one of them without changing a single claim.
+
+**Controlled exception.** One named idea can carry a whole piece, and when it does it is not a tell. The conditions: you state the mechanism in your own words, you show why this case fits it, and you let it make a prediction someone could check and find wrong. A Jevons-paradox piece that says "if inference gets 10x cheaper, total spend goes up, and here is the usage curve that would falsify that" is using the idea. A piece that says "this is basically Jevons paradox" and moves on is name-dropping.
+
+**Fix.** Cut the frame and make the claim directly. If you keep a named law, spend a paragraph on the mechanism and commit to what it predicts. One per piece.
+
+---
+
+## 53. The shift framing
+
+**Looks like.** "The bottleneck has moved from X to Y." "The constraint is no longer writing code, it is reviewing it." "The scarce resource has shifted from capital to attention." "The hard part used to be building; now it's distribution." Often repeated in every section with a fresh noun pair.
+
+**Why it reads as AI.** It is a genuinely good thesis shape, which is why models produce it constantly. The trouble is that it is cheap to generate: pick any two nouns, put "no longer" between them, and you have a sentence that sounds like analysis. Nothing in the construction requires the shift to be real, dated, or measurable. It also fuses with the X-not-Y construction (entry 1), so a piece that leans on it inherits that rhythm throughout.
+
+**Exception.** Used once as the actual thesis of a piece, this is a legitimate and strong move, and it is a shape worth keeping. The tell is repetition: the same construction reappearing in every section with new noun pairs, until the piece is a list of reframings rather than an argument. A second sign of the weak version is that the shift is undated and unevidenced. A real one has a when and a because.
+
+**Fix.** Keep one, and support it. Say when the shift happened, what caused it, and what observation would show it had not. Rewrite the others as plain statements of what is true now. "The bottleneck has moved from writing code to reviewing it" survives if the next sentence is "our PR queue went from a two-day median in January to nine days in June while merged volume doubled."
+
+---
+
+## 54. Punctuation sparseness and long unbroken sentences
+
+**Looks like.** Long sentences joined with "and" that could have been two sentences, few commas inside them, almost no semicolons, colons, or parentheses, and no quoted material from anyone. Paragraphs of even, uninterrupted clauses.
+
+**Why it reads as AI.** This one is counterintuitive and it is new. The Economist compared 55,940 sentences of its own writing against ChatGPT, Claude, Gemini, and Grok output (1.2 million words) and found models use *fewer* commas, semicolons, and parentheses than human writers, write longer sentences, and overuse "and" more than any other word. Part of the cause is that models do not quote experts, so their prose lacks the punctuation that quotation and attribution bring. The same study found em dashes are no longer a reliable marker: only Claude used them more than humans did (see entry 23).
+
+**Fix.** Break long "and" chains into separate sentences. Use the punctuation you would actually use: a semicolon where two clauses are balanced, parentheses for a real aside, a colon before a genuine list. Quote a person by name where you have one. Note that this tell pulls in the opposite direction from the dash rule in entry 23, and that is fine: the fix for both is punctuation that reflects real sentence structure rather than a default connector.
+
+---
+
+## 55. Over-explained theme and tidy resolution
+
+**Looks like.** A story, anecdote, or case study that states its own moral. The lesson arrives in a closing line ("what I took from that is..."), the plot runs on a single track with no competing pressure, the protagonist's choice is never genuinely hard, and everything resolves. In business writing: the incident story where the fix worked, the team agreed, and the lesson generalizes.
+
+**Why it reads as AI.** StoryScope (Russell et al., arXiv 2604.03136) analyzed 61,608 stories on discourse-level narrative features and found AI fiction over-explains its themes and favors tidy, single-track plots, while human stories keep moral ambiguity and temporal complexity. Narrative features alone separated human from AI writing at 93.2% accuracy, and about 30 features carried most of that signal. The finding matters beyond fiction: any anecdote a model writes tends to arrive pre-digested, with the meaning stated rather than shown, and the mess sanded off. It is the narrative version of the one-move-solves-all convergence (entry 43).
+
+**Fix.** Cut the stated moral and let the events carry it. Keep the part where the decision was actually hard, the objection you did not have a good answer for, and the thing that is still unresolved. If the anecdote has no tension, it is probably not worth telling.
+
+---
+
+## 56. Document-structure artifacts
+
+**Looks like.** Formatting habits that betray a template rather than a document.
+
+- Tables used for content that is a list or a sentence (a two-column table of "Benefit | Description").
+- Skipped heading levels: an `##` followed by `####`, with nothing in between.
+- Thematic breaks (`---`) inserted before every heading.
+- Markdown syntax pasted into a context that does not render it: `**bold**` in a plain-text email, a Slack message, a wiki with its own markup, or a CMS field.
+- Placeholder and template text left in place: "[insert company name]," "[Your Name]," "[citation needed]" as a standalone sentence, "Note: verify this figure."
+- Every section the same length with the same internal shape, regardless of how much there is to say.
+
+**Why it reads as AI.** These come from Wikipedia's "Signs of AI writing," where they are among the most reliable flags editors use. They are all evidence that the text was generated into a template and pasted, not written into the document it lives in. Placeholder text and unrendered markdown are near-conclusive, because a human writing in that context would have seen the problem immediately.
+
+**Fix.** Convert unnecessary tables to prose or a plain list. Fix the heading hierarchy. Delete decorative rules. Match the target format's actual markup. Search the draft for `[` before publishing. Let sections be the length their content deserves.
+
+---
+
+## 57. Provenance artifacts and citation pathologies
+
+**Looks like.** Strings that leak the generating tool, and citations that do not survive checking.
+
+*Provenance strings.* `utm_source=chatgpt.com` or `utm_source=openai` in a pasted URL. `oaicite`, `contentReference`, `:contentReference[oaicite:0]` (ChatGPT). `[cite: 1]`, `[span_1]` (Gemini). `grok_card`, `grok_render_citation_card_json` (Grok). Lenticular brackets `【 】` and stray dagger marks (DeepSeek). `attached_file`, `ppl-ai-file-upload` (Perplexity).
+
+*Citation pathologies.* Links that 404. DOIs that resolve to an unrelated paper. Invalid ISBNs. Book citations with no page number. Confident quotations that do not appear in the cited source. Named references defined but never used. A source list where every entry is plausible and two of them do not exist.
+
+**Why it reads as AI.** Provenance strings are not stylistic tells at all; they are residue from the tool, and Wikipedia's editors treat them as close to conclusive. Citation pathologies come from the model generating citation-shaped text rather than retrieving sources, which is why the failures cluster in the identifiers (DOI, ISBN, page number) that look plausible but resolve to nothing.
+
+**Fix.** Grep for `utm_source=`, `oaicite`, `contentReference`, `cite:`, `【` before publishing anything that involved a model. Open every link. Check that every quotation appears in the source you attributed it to. If a citation cannot be verified, delete the claim rather than the citation.
+
+**Note on scoring.** These do not belong in the ai-smell score. The score rates how machine-generated prose *reads*; a provenance string is evidence about how the text was *made*, and one instance outweighs any stylistic judgment. Report it separately and plainly.
 
 ---
 
@@ -486,7 +642,9 @@ Keep hyphens only inside genuinely hyphenated words. The personal-voice skill ap
 
 After any draft, ask honestly: "What would make this so obviously AI-generated?" Name the remaining tells using the vocabulary above. Then revise. If you cannot read a paragraph aloud without hearing the cadence of a model, it still reads as AI.
 
-This is also where the ai-smell score gets assigned (see the rubric in `SKILL.md`): the tells named here are the evidence behind the score. Structural tells (the top six plus entries 42 to 46) carry the most weight, rhythm and voice next, lexical and formatting tells least. Cite the specific instances, then score and revise.
+This is also where the ai-smell score gets assigned (see the rubric in `SKILL.md`): the tells named here are the evidence behind the score. Structural tells (the top six plus entries 42 to 46, 48 to 50, 53, and 55) carry the most weight, rhythm and voice next, lexical and formatting tells least. Cite the specific instances, then score and revise.
+
+Provenance artifacts (entry 57) sit outside the score entirely. Report them separately.
 
 ---
 
@@ -501,6 +659,10 @@ The rubric is a lightweight, prose-specific version of the LLM-as-a-judge method
 **The lexical dimension has an empirical backbone.** Kobak et al. (2024) measured "excess vocabulary" across 14 million PubMed abstracts and showed that words like *delve*, *underscore*, and *showcase* spiked after ChatGPT, an effect larger than the Covid pandemic left on scientific prose. Word-frequency tells are not folklore; they are measurable.
 
 **Rhythm is real but never decisive.** Burstiness (variation in sentence-level surprise) underlies the classic detectors DetectGPT, Fast-DetectGPT, and Binoculars (Hans et al. 2024). But Pangram Labs and others show low burstiness alone misfires badly: it flags plain human prose, famous documents, and non-native English writers. So uniform rhythm is one dimension of five, never a verdict on its own. This is why the score stays inside the pass and is never presented as proof of authorship.
+
+**Surface markers rotate; structure does not.** Two 2026 findings make this concrete. The Economist's comparison of 1.2 million words of its own prose against four frontier models found the em dash has stopped working as a marker (only Claude overuses it) and that punctuation *sparseness* now separates the sets better, because models write longer sentences, lean on "and," and do not quote people. Forbes's May 2026 roundup shows the vocabulary layer moving the same way: the delve-and-tapestry set has been scrubbed out of a lot of writing and replaced by plain words used abstractly (quietly, shift, matters, land, real, earn, compound, signal). Anything word-level or punctuation-level in this catalog should be treated as dated on arrival and rechecked. Sarvazyan et al. (2025) is the counterweight: structural and syntactic fingerprints persist across domains and survive paraphrase, which is why the rubric weights structural tics highest.
+
+**Narrative shape is its own signal.** StoryScope (Russell et al. 2026) analyzed 61,608 stories on discourse-level features rather than style and hit 93.2% separation between human and AI narratives, with about 30 features carrying most of it. AI stories over-explain their themes and run tidy single-track plots; human ones keep ambiguity and temporal mess. That result is why entry 55 exists and why the fix for a flat anecdote is structural, not lexical.
 
 **The deeper mechanism is homogenization.** Work on shrinking linguistic diversity (arxiv 2502.11266) and on instruction-tuning reducing lexical variety shows LLMs converge toward a low-diversity mean. AI-smell is the surface of that convergence, which is why the fix is always the same: reintroduce specificity, variation, and a point of view.
 
@@ -534,3 +696,6 @@ These are descriptive field guides, not detectors. No single pattern proves AI a
 | Binoculars: zero-shot LLM detection (Hans et al. 2024) | https://arxiv.org/abs/2401.12070 | Perplexity/cross-perplexity detection; the burstiness signal behind the rhythm dimension |
 | Why perplexity and burstiness fail (Pangram Labs) | https://www.pangram.com/blog/why-perplexity-and-burstiness-fail-to-detect-ai | Limits of statistical signals: false positives on plain and non-native prose; why rhythm is never decisive alone |
 | Shrinking Landscape of Linguistic Diversity (2025) | https://arxiv.org/abs/2502.11266 | LLM adoption reduces stylistic diversity; the homogenization the whole skill works against |
+| The Economist on spotting AI writing (2026) | https://www.fastcompany.com/91584243/how-to-identify-ai-generated-writing-viral-report-has-surprising-new-clues-economist | 55,940 sentences, 1.2M words vs. four frontier models. Em dashes no longer diagnostic (only Claude overuses); models use fewer commas, semicolons, parentheses, write longer sentences, overuse "and," don't quote people. Basis for entry 54 and the caveat in entry 23 |
+| Forbes: 15 new giveaway signs of AI writing (May 2026) | https://www.forbes.com/sites/jodiecook/2026/05/21/15-new-giveaway-signs-of-ai-writing-may-2026-update/ | The post-delve vocabulary: quietly, shift, matters, shape, land, actually, real, earn, the work, hold, pull, compound, signal, built different. Feeds entries 10 and 47 |
+| StoryScope: idiosyncrasies in AI fiction (Russell et al. 2026) | https://arxiv.org/abs/2604.03136 | 61,608 stories scored on discourse-level narrative features; 93.2% human/AI separation from narrative shape alone. AI over-explains themes and favors tidy single-track plots. Basis for entry 55 |

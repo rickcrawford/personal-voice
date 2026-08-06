@@ -42,6 +42,8 @@ The whole job is to move text from the first kind to the second.
 
 This skill does not use em dashes (—) or en dashes (–) in the writing it produces or edits. That is a default feature, not an optional house style.
 
+One honest caveat, since the research moved: the em dash is no longer good evidence that a model wrote something. The Economist's 2026 comparison of 1.2 million words against four frontier models found only Claude uses em dashes more than human writers do. Keep stripping them, because the dash stack still reads like sales copy and the rewrite is almost always clearer, but treat it as a style preference rather than a detection signal, and do not raise an ai-smell score on dash count alone.
+
 **When drafting.** Do not reach for an em or en dash as a connector, aside, or punch. Use a comma, a period and a new sentence, or parentheses instead.
 
 **When auditing.** Find every em dash and en dash in the draft and rewrite each one. Common swaps:
@@ -82,15 +84,21 @@ If you do nothing else, hunt these six. They are the loudest signals that a mode
 
 **The rhetorical wrap-up.** A short declarative that claims to settle the argument, paired with a clause that demotes everything else. "That's the whole game. The rest is execution." "That picture is the plan. Everything else is detail." It mimics a mic drop with no speaker behind it, and it usually substitutes for actually finishing the argument. Fix: cut the line (the paragraph above probably made the point), or replace it with a real transition, or make it specific by naming the actual thing it waves at. A related move is the circular bookend, closing a passage by restating its opening in new words (see the catalog).
 
-**Journey and travel metaphor stacks.** Journey, arc, path, voyage, embark, navigate, and landscape applied to things that do not move. "The product has a journey." "Across that arc." "The path forward." Once one travel word lands, related ones pile up. Fix: use the literal word (process, stages, sequence, pattern). If the sentence still works after the swap, the metaphor was not earning its keep. A single anchoring travel metaphor in a title or thesis can be fine; proliferation is the tell.
+**Dead metaphor stacks.** Three clusters, one tell. *Travel*: journey, arc, path, voyage, embark, navigate, landscape applied to things that do not move ("the product has a journey," "across that arc," "the path forward"). *Structural*: load-bearing, doing a lot of work, heavy lifting, foundation, cornerstone, scaffolding, pillars, spine, backbone, the thread between, connective tissue, the seams, the glue, plus the mechanical cousins (levers, dials, move the needle, plumbing, rails, under the hood, surface area). *Doors*: opens the door to, closes the door on, unlocks, paves the way, gateway, on-ramp, floodgates. Once one of these lands, related ones pile up in the same paragraph. The structural ones claim something matters without naming what depends on it; the door ones are a hedge, since "opens the door to faster releases" is what you write when you won't commit to saying releases get faster. Fix: name the mechanism or the consequence. "That assumption is load-bearing" becomes "if that assumption is wrong, the pricing model and the hiring plan both change." "That opens the door to faster releases" becomes "once that lands, releases go out weekly instead of monthly." "The thread between the two teams" becomes "both teams depend on the same schema and neither owns it." If the sentence reads fine with the literal statement swapped in, the metaphor was decoration. A single anchoring image in a title or thesis can be fine; proliferation is the tell. Entries 16, 48, and 49 in the catalog.
 
 **Signposting and announcements.** "Let's dive in." "Here's what you need to know." "Let's break this down." "Without further ado." The model narrates its own outline instead of writing. Fix: do the thing. "Let's look at how caching works" becomes "Caching here happens at three layers."
 
 **Rule of three.** Forcing ideas into triplets: "faster, better, cheaper," "speed, scale, security," three parallel bullets that could be two or four. The model defaults to three because it sounds comprehensive. Fix: count what is actually there and use that number. A related move is the one-move-solves-all convergence: list N problems, then claim a single thing answers all N ("three pressures, and consolidation is the one move that answers all three"). See the catalog.
 
-**Scan next:** significance inflation (*stands as, testament, pivotal*), superficial `-ing` endings (*highlighting, underscoring, ensuring*), fragmented headers (heading followed by a one-line restatement), colon reveals (*the best part: it learns*), faux-insight openers (*here's the thing, what nobody tells you*), empty intensifiers (*just, really, actually, simply*), AI vocabulary clusters (*delve, tapestry, robust, leverage* when three or more appear close together), and em or en dashes.
+**Scan next:** significance inflation (*stands as, testament, pivotal*), superficial `-ing` endings (*highlighting, underscoring, ensuring*), fragmented headers (heading followed by a one-line restatement), colon reveals (*the best part: it learns*), faux-insight openers (*here's the thing, what nobody tells you*), rhetorical question setups including question-shaped headings (*So what does this mean?*), imperative closers (*start there, pick one and run it this quarter*), the shift framing repeated section after section (*the bottleneck has moved from X to Y*), adverb tics (*just, really, actually, simply, genuinely, quietly, arguably*), consultant-deck vocabulary (*table stakes, moat, flywheel, north star, step change*), snowclones and named-law drops (*X is the new Y, a feature not a bug, Goodhart, Chesterton's fence*), and AI vocabulary clusters.
 
-The full catalog of every other tell (promotional language, vague attributions, false ranges, copula avoidance, persuasive authority tropes, filler phrases, hedging, generic positive conclusions, conjunctive-adverb crutches, em dashes, inline-header lists, title case, emojis, curly quotes, temporal inflation openers, balanced both-sides pivots, and more) lives in `references/ai-tells.md`. Read that file when drafting or auditing anything substantial.
+**Grep list.** Each of these is almost always decoration, so search for them literally on every pass: *opens the door*, *closes the door*, *unlocks*, *paves the way*, *gateway*, *on-ramp*, *floodgates*, *threshold*, *load-bearing*, *doing a lot of work*, *heavy lifting*, *foundation*, *foundational*, *cornerstone*, *bedrock*, *scaffolding*, *pillars*, *building blocks*, *spine*, *backbone*, *connective tissue*, *the thread between*, *the thread running through*, *the seams*, *the fabric of*, *the glue*, *the plumbing*, *the wiring*, *the space between*, *levers*, *dials*, *move the needle*, *on rails*, *under the hood*, *surface area*, *table stakes*, *flywheel*, *north star*, *single pane of glass*, *step change*, *quietly*, *no longer just*, *is the new*.
+
+**Provenance grep, run before publishing anything a model touched.** `utm_source=`, `oaicite`, `contentReference`, `cite:`, `【`, `[insert`, `[Your`. These are residue from the generating tool, not style. One hit means the text was pasted out of a chat window without a read-through, and it outweighs any stylistic judgment. Report it separately and keep it out of the score. Catalog entry 57.
+
+**A note on em dashes.** The default here is still to strip them, but that is a style choice, not a detection claim. The Economist's 2026 study of 1.2 million words found em dashes no longer separate human from AI writing (only Claude overuses them), and that models actually use *fewer* commas, semicolons, and parentheses than people while writing longer sentences joined by "and." So do not raise a score on dash count, and do watch for the opposite problem: long unpunctuated sentences with no quoted voices in them (entry 54).
+
+The full catalog of every other tell (promotional language, vague attributions, false ranges, copula avoidance, persuasive authority tropes, filler phrases, hedging, generic positive conclusions, conjunctive-adverb crutches, inline-header lists, title case, emojis, curly quotes, temporal inflation openers, balanced both-sides pivots, over-explained anecdotes, document-structure artifacts, and more) lives in `references/ai-tells.md`. Read that file when drafting or auditing anything substantial. Several entries carry controlled exceptions, which matter as much as the rules: consultant vocabulary that is a real term of art in your field, one named law whose mechanism you actually work through, a single anchoring metaphor, and the shift framing used once as a thesis. The tell is repetition and decoration, not the move itself.
 
 ## Personality and soul
 
@@ -144,12 +152,16 @@ Match the size of your changes to whose voice the text carries and how much voic
 ## Editing or auditing a draft
 
 1. Read it once for content and meaning.
-2. Read it again hunting the top six: X-not-Y, contrast-flip couplets, rhetorical wrap-ups, journey/travel metaphor stacks, signposting, and rule of three.
-3. Scan headings for title case and for warm-up lines that just restate the heading.
-4. Scan paragraphs for significance inflation, superficial `-ing` endings, colon reveals ("the best part: ..."), faux-insight openers ("here's the thing," "what nobody tells you"), empty intensifiers (just, really, actually, literally, simply), and clusters of inflated AI vocabulary (three or more watch-words close together).
-5. Remove every em dash and en dash. Rewrite each with commas, parentheses, conjunctions, or new sentences.
-6. Rewrite each problem in place, making the smallest change that fixes the tell (see How hard to edit). Preserve meaning, and preserve the writer's voice if a sample was given or the draft is already theirs.
-7. Re-audit after any rewrite. Tidy triplets (rule of three) and circular bookends are the tells most likely to creep back in when a sentence gets edited.
+2. Read it again hunting the top six: X-not-Y, contrast-flip couplets, rhetorical wrap-ups, dead metaphor stacks (travel, structural, doors), signposting, and rule of three.
+3. Scan headings for title case, for warm-up lines that just restate the heading, and for questions the section immediately answers.
+4. Scan paragraphs for significance inflation, superficial `-ing` endings, colon reveals ("the best part: ..."), faux-insight openers ("here's the thing," "what nobody tells you"), adverb tics (just, really, actually, simply, genuinely, quietly), dead metaphors (doors, load-bearing, threads, levers), consultant vocabulary (table stakes, moat, flywheel, step change), snowclones and named-law drops, and clusters of inflated AI vocabulary (three or more watch-words close together).
+5. Check the ending. Cut imperative closers ("start there," "pick one and run it this quarter"); the paragraph above almost always ends the piece better.
+6. Check the shift framing. Once as a thesis is fine and is worth keeping; the same "moved from X to Y" construction in every section with fresh noun pairs is the tell.
+7. Check punctuation in both directions. Remove every em dash and en dash, rewriting with commas, parentheses, conjunctions, or new sentences. Then look for the opposite problem, which the research now says matters more: long sentences chained with "and," almost no semicolons, colons, or parentheses, and nobody quoted by name.
+8. If the draft carries an anecdote or case study, check that it does not state its own moral and that the genuinely hard part of the decision survived.
+9. Run the provenance grep (`utm_source=`, `oaicite`, `contentReference`, `cite:`, `【`, `[insert`) and confirm every link, quotation, and citation resolves. Fix template residue: skipped heading levels, decorative `---` rules, tables holding what should be a sentence, markdown pasted where it will not render.
+10. Rewrite each problem in place, making the smallest change that fixes the tell (see How hard to edit). Preserve meaning, and preserve the writer's voice if a sample was given or the draft is already theirs.
+11. Re-audit after any rewrite. Tidy triplets (rule of three), circular bookends, and imperative closers are the tells most likely to creep back in when a sentence gets edited.
 
 ## The ai-smell score
 
@@ -159,13 +171,17 @@ Score five dimensions, each capped as shown, then sum them. The caps weight the 
 
 | Dimension | Cap | What it measures | Maps to |
 |-----------|-----|------------------|---------|
-| Structural tics | 30 | X-not-Y, contrast-flip couplets, rhetorical wrap-ups, travel-metaphor stacks, signposting, rule of three, colon reveals, faux-insight openers, false-depth reveals, one-move-solves-all, circular bookends | Top six plus entries 42 to 46 |
-| Rhythm and burstiness | 20 | Sentence-length variation and paragraph shape. Uniform, metronomic cadence scores high | Entry 35 |
+| Structural tics | 30 | X-not-Y, contrast-flip couplets, rhetorical wrap-ups, dead metaphor stacks (travel, structural, doors), signposting, rule of three, colon reveals, faux-insight openers, false-depth reveals, one-move-solves-all, circular bookends, rhetorical question setups, imperative closers, the repeated shift framing, over-explained anecdotes | Top six plus entries 41 to 46, 48 to 50, 53, 55 |
+| Rhythm and punctuation | 20 | Sentence-length variation and paragraph shape. Uniform, metronomic cadence scores high. Also punctuation density in both directions: a dash stack, or the newer tell of long "and"-chained sentences with almost no commas, semicolons, or parentheses and nobody quoted | Entries 35, 54 |
 | Voice and stance | 20 | Opinions, first person where it fits, landing a position, acknowledged complexity. Neutral press-release tone scores high | Entries 35, 37, 21 |
-| Lexical tells | 20 | AI-vocabulary clusters, significance inflation, promotional language, empty intensifiers, copula avoidance, superficial `-ing`, filler, vague attributions | Entries 4, 6 to 11, 18, 19, 47 |
-| Formatting artifacts | 10 | Em/en dashes, boldface overuse, inline-header lists, title case, emojis, curly quotes, takeaway boxes | Entries 23 to 28, 40 |
+| Lexical tells | 20 | AI-vocabulary clusters (both the delve-era set and the 2026 set: quietly, shift, matters, land, real, earn, compound, signal), significance inflation, promotional language, adverb tics, consultant-deck vocabulary, snowclones and named-law drops, copula avoidance, superficial `-ing`, filler, vague attributions | Entries 4, 6 to 11, 18, 19, 47, 51, 52 |
+| Formatting artifacts | 10 | Boldface overuse, inline-header lists, title case, emojis, curly quotes, takeaway boxes, skipped heading levels, decorative rules, tables doing a sentence's job, unrendered markdown, leftover placeholder text | Entries 24 to 28, 40, 56 |
 
 Rough anchors within a dimension: 0 means none of its tells appear; roughly a third of the cap means one or two isolated instances; roughly two-thirds means a recurring habit; the cap means the writing is built on that category.
+
+**Provenance flag, reported outside the score.** Entry 57 artifacts (`utm_source=chatgpt.com`, `oaicite`, `contentReference`, `[cite: 1]`, `【 】`, placeholder text, citations that do not resolve) are evidence about how the text was made, not how it reads. Do not fold them into any dimension. Report them as a separate line above the score, because one of them tells the reader more than the whole rubric does.
+
+**What moved and why, for anyone comparing to older scores.** Dimension two used to be rhythm alone and is now rhythm and punctuation, because the em dash stopped being diagnostic in 2026 while punctuation sparseness became a stronger signal. Em/en dashes moved out of Formatting artifacts and into that dimension, where they are weighed as one signal among several rather than a fingerprint. The caps and the five-dimension shape are unchanged, so before-and-after deltas still mean the same thing.
 
 Scoring rules, so the number stays honest:
 
@@ -199,10 +215,19 @@ Every mode reports the ai-smell score. Report it as the headline number plus the
 ```
 AI-smell: 12/100 (faint)
   Structural tics   4/30  one X-not-Y in paragraph 2
-  Rhythm            4/20  middle section runs even
+  Rhythm and punct  4/20  middle section runs even
   Voice and stance  2/20  lands a clear position
   Lexical tells     2/20  "leverage" once
   Formatting        0/10  clean
+```
+
+When provenance artifacts turn up, they go above the score on their own line, not inside it:
+
+```
+Provenance: 2 artifacts. "utm_source=chatgpt.com" on the Stripe link;
+            placeholder "[insert customer name]" in paragraph 6.
+AI-smell: 12/100 (faint)
+  ...
 ```
 
 In **detect** mode, lead with the score, then provide the findings: each tell named with catalog vocabulary, the quoted line, and a one-line fix, loudest first. No rewrite.
@@ -233,3 +258,6 @@ These are worth consulting when updating the catalog or when a piece needs deepe
 | [Google Cloud: Statistical tells (Weinmeister)](https://medium.com/google-cloud/detecting-ai-generated-text-by-uncovering-its-statistical-tells-042c8d0e3a24) | Data-driven analysis of signposting (*here's, let's, break down*), authoritative qualifiers (*crucial, comprehensive*), and sycophantic openers (*great question*). |
 | [VU Amsterdam ALP Guide](https://vu.nl/en/about-vu/more-about/alp-guide-spotting-ai-writing) | Academic framing: boosters vs. hedges, bland/robotic style, overly poetic language (*rich tapestry*), low perplexity. |
 | [ACL 2025: LLM Fingerprints (Sarvazyan et al.)](https://aclanthology.org/2025.genaidetect-1.6/) | Research showing models leave persistent lexical and syntactic fingerprints across domains. Supports treating structural patterns as more durable tells than individual words. |
+| [The Economist on spotting AI writing (2026)](https://www.fastcompany.com/91584243/how-to-identify-ai-generated-writing-viral-report-has-surprising-new-clues-economist) | 55,940 sentences and 1.2M words against four frontier models. Em dashes are no longer diagnostic; punctuation sparseness, longer sentences, "and" overuse, and absent quotation are. Basis for the rhythm-and-punctuation dimension. |
+| [Forbes: 15 new giveaway signs (May 2026)](https://www.forbes.com/sites/jodiecook/2026/05/21/15-new-giveaway-signs-of-ai-writing-may-2026-update/) | The post-delve vocabulary: *quietly, shift, matters, shape, land, real, earn, the work, hold, pull, compound, signal, built different*. Plain words used abstractly, which is why they are harder to spot. |
+| [StoryScope (Russell et al. 2026)](https://arxiv.org/abs/2604.03136) | 61,608 stories scored on narrative rather than stylistic features; 93.2% human/AI separation. AI over-explains its themes and favors tidy single-track plots. Basis for the over-explained-anecdote tell. |
